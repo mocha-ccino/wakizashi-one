@@ -88,7 +88,7 @@ def movement(player, WINDOW_WIDTH):
 
 crashed = False
 
-corner = TEST_FONT.render("bo'ol o' wo'ah".upper(), False, WHITE).convert()
+corner = TEST_FONT.render("goofy ahh level 1-1".upper(), False, WHITE).convert()
 corner_coords = corner.get_rect(center = gameDisplay.get_rect().center)
 
 
@@ -105,7 +105,6 @@ def gameLoop():
     player.draw(gameDisplay)
 
 
-    corner = TEST_FONT.render("bo'ol o' wo'ah".upper(), False, WHITE).convert()
     gameDisplay.blit(corner, (0, 0))
 
     gravity(player, WINDOW_HEIGHT)

@@ -11,6 +11,10 @@ class Player():
         self.Vx = 0
         self.Vy = 0
         self.color = color
+        self.right = self.x + self.width
+        self.left = self.x
+        self.top = self.y
+        self.bottom = self.y + self.height
 
     def rad_to_deg(self, rad):
         return rad * (180/pi)
